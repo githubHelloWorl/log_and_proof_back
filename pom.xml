@@ -73,7 +73,12 @@
             <version>9.9</version> <!-- Use the latest version available -->
         </dependency>
 
-
+        <!-- 引入 fastJSON-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.83</version>
+        </dependency>
     </dependencies>
 
     <build>

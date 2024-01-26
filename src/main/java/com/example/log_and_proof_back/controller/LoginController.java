@@ -3,6 +3,7 @@ package com.example.log_and_proof_back.controller;
 import com.example.log_and_proof_back.pojo.Result;
 import com.example.log_and_proof_back.pojo.Student;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,9 +27,12 @@ public class LoginController {
             return Result.success(1,"success",jwt);
         }
 
+        return Result.error();
+    }
 
-
-        return Result.success();
+    @GetMapping("/aaa")
+    public Result aaa(){
+        return Result.success(1,"aaa","data_aaa");
     }
 }
 
